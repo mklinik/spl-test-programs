@@ -1,0 +1,5 @@
+main () :: -> Void
+{
+    /* This should give an error message */
+    print(True + 1);
+}
