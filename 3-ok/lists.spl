@@ -1,0 +1,15 @@
+main()::->Void
+{
+    [Int] a = [];
+    [Int] b = 1:[];
+    [Int] c = 2:b;
+
+    print( isEmpty(a) );
+
+    print( b.hd );
+
+    print( c.hd );
+    print( c.tl.hd );
+
+    return;
+}

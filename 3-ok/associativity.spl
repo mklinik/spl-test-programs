@@ -1,5 +1,7 @@
 main () :: -> Void
 {
+    [Int] a = 1 : 2 : 3 : [];
+
     /* this should print 0 */
     print(3 - 2 - 1);
 
@@ -19,4 +21,6 @@ main () :: -> Void
 
     /* this should print 4 */
     print(12 / (6 / 2));
+
+    return;
 }
