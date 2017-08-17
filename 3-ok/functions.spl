@@ -1,0 +1,43 @@
+idInt(x) :: Int -> Int
+{
+    return x;
+}
+
+inc(x) :: Int -> Int
+{
+    return x + 1;
+}
+
+idBool(x) :: Bool -> Bool
+{
+    return x;
+}
+
+idListInt(x) :: [Int] -> [Int]
+{
+    return x;
+}
+
+idTupleIntBool(x) :: (Int,Bool) -> (Int,Bool)
+{
+    return x;
+}
+
+unpack(x) :: ((Int,(Int,Int)),Int) -> ((Int, Int), (Int, Int))
+{
+    return ((x.fst.fst, x.fst.snd.fst), (x.fst.snd.snd, x.snd));
+}
+
+main()::->Void
+{
+    [Int] a = idListInt(1:2:3:[]);
+    (Int,Bool) b = idTupleIntBool((5,True));
+    print(idInt(5));
+    print(idBool(True));
+    print(a.hd);
+    print(b.fst);
+    print(b.snd);
+
+    print(inc(3));
+    print(inc(inc(inc(3))));
+}

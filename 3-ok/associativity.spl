@@ -21,6 +21,4 @@ main () :: -> Void
 
     /* this should print 4 */
     print(12 / (6 / 2));
-
-    return;
 }

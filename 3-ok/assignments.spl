@@ -1,0 +1,29 @@
+Int globalA = 0;
+
+f(paramA) :: Int -> Void
+{
+    print(paramA);
+    paramA = 1;
+    print(paramA);
+    paramA = paramA + 1;
+    print(paramA);
+}
+
+main()::->Void
+{
+    Int localA = 0;
+
+    print(globalA);
+    globalA = 1;
+    print(globalA);
+    globalA = globalA + 1;
+    print(globalA);
+
+    print(localA);
+    localA = 1;
+    print(localA);
+    localA = localA + 1;
+    print(localA);
+
+    f(0);
+}

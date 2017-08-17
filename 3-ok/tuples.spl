@@ -1,6 +1,7 @@
 main() :: -> Void
 {
     (Int, Int) a = (5, 3);
+    (Int, Bool) b0 = (10, True);
     (Int, Bool) b = (a.fst + 10, 7 < 3);
     ((Int, Int), Int) c = ((5,3),42);
     ((Bool, Bool), (Int, Int)) d = ((True, False), a);
@@ -24,6 +25,4 @@ main() :: -> Void
     print( d.snd.snd );
 
     print( e.fst.hd );
-
-    return;
 }

@@ -20,6 +20,4 @@ main () :: -> Void
   print(!!True);
   print(!!!True);
   print(!!!!True);
-
-  return;
 }

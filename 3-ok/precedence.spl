@@ -45,6 +45,4 @@ main () :: -> Void
 
     /* True */
     print( False || 1 + 1 < 5 && True );
-
-    return;
 }

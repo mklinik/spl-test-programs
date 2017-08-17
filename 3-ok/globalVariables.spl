@@ -12,7 +12,7 @@ Bool b = True;
 ((Bool, Bool), (Int, Int)) ad = ((True, False), aa);
 ([Int], Int) ae = (1:2:3:[], 7);
 
-Void main() /*:: -> Void*/
+main() :: -> Void
 {
     print( aa.fst );
     print( aa.snd );
@@ -30,6 +30,4 @@ Void main() /*:: -> Void*/
     print( ad.snd.snd );
 
     print( ae.fst.hd );
-
-    return;
 }

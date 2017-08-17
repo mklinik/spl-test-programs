@@ -1,9 +1,0 @@
-main () :: -> Void
-{
-    Bool x = 1 < 2;
-    Int y = 42;
-    Int z = 42;
-    print(x);
-
-    return;
-}

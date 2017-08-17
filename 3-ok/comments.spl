@@ -30,6 +30,4 @@ main () :: -> Void
   /* another tricky example // */
 
   print(7);
-
-  return;
 }
