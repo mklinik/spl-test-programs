@@ -1,0 +1,9 @@
+main() :: -> Void
+{
+    Int a = 10;
+    (Int, Bool) b = (10, True);
+
+    // each of these lines should give a compile error
+    print( a.fst );
+    print( b.snd + 7 );
+}

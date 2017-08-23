@@ -1,0 +1,12 @@
+main() :: -> Void
+{
+    // each of the commented lines should give a compile error
+    [Int] a = 1:2:[];
+    [Bool] b = True:False:[];
+    [Int] c = [];
+    /*[Int] d = b:c;*/
+    /*[Bool] e = True:b;*/
+
+    /*print(isEmpty(a.hd));*/
+    /*print(isEmpty(True));*/
+}

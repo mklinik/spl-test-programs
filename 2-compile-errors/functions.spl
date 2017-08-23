@@ -1,0 +1,31 @@
+// Each of the commented lines should give a compile error
+
+f(x) :: Int -> Bool
+{
+    return False;
+}
+
+g(x,y) :: Int Int -> Int
+{
+    /*return x < y;*/
+}
+
+h() :: -> Bool
+{
+    if( True )
+    {
+        /*return 10;*/
+    }
+    else
+    {
+        return False;
+    }
+}
+
+
+main() :: -> Void
+{
+    /*print(f(True));*/
+    /*print(f(f));*/
+    /*print(f(10) + 10);*/
+}

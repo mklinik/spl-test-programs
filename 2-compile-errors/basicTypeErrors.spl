@@ -1,0 +1,22 @@
+main() :: -> Void
+{
+    // Each of the commented lines should give a compile error
+
+    /*Int a = True;*/
+    /*Bool b = 10;*/
+    Int c = 0;
+    [Int] d = 1:2:3:[];
+    [Bool] e = True:False:[];
+
+    /*c = True;*/
+    /*print( c + d );*/
+    /*print( c + d.tl );*/
+    /*print( e * d );*/
+    /*print( 10 * True );*/
+    /*print( 10 < True );*/
+    /*print( False < True );*/
+    /*print( 10 || 5 );*/
+    /*print( True || 5 );*/
+    /*print( 10 && False );*/
+    /*print( 10 && False );*/
+}
