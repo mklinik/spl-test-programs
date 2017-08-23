@@ -7,7 +7,7 @@ Bool b = True;
 [Bool] d = False : [];
 
 (Int, Int) aa = (5, 3);
-(Int, Bool) ab = (a.fst + 10, 7 < 3);
+(Int, Bool) ab = (aa.fst + 10, 7 < 3);
 ((Int, Int), Int) ac = ((5,3),42);
 ((Bool, Bool), (Int, Int)) ad = ((True, False), aa);
 ([Int], Int) ae = (1:2:3:[], 7);
