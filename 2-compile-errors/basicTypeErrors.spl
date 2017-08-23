@@ -19,4 +19,7 @@ main() :: -> Void
     /*print( True || 5 );*/
     /*print( 10 && False );*/
     /*print( 10 && False );*/
+
+    /*while( 10 ) { }*/
+    /*if( 10 ) {} else {}*/
 }
