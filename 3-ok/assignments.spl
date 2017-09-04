@@ -69,9 +69,9 @@ main()::->Void
     incList(gIntList);
     printIntList(gIntList);
 
-    incNegTuple(lTuple);
-    print(lTuple.fst);
-    print(lTuple.snd);
+    incNegTuple(lTuple1);
+    print(lTuple1.fst);
+    print(lTuple1.snd);
 
     incNegTuple2(lTuple2);
     print(lTuple2.fst);
