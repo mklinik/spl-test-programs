@@ -16,7 +16,4 @@ main()::->Void
     print(f(5));
     /* 11 */
     print(f(15));
-
-    /* 6 */
-    print(g(3));
 }
