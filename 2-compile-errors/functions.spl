@@ -24,6 +24,23 @@ h() :: -> Bool
     }
 }
 
+i(x, y) :: Int Int -> Int
+{
+    return x + y;
+}
+
+// too many arguments
+j(x, y) :: Int -> Int
+{
+    return x + y;
+}
+
+// not enough arguments
+k(x) :: Int Int -> Int
+{
+    return x;
+}
+
 
 main() :: -> Void
 {
@@ -33,4 +50,9 @@ main() :: -> Void
     print(f(f));
     // Int ~ Bool
     print(f(10) + 10);
+
+    // not enough arguments
+    i(10);
+    // too many arguments
+    i(10, 20, 30);
 }
