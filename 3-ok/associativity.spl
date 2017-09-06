@@ -1,7 +1,5 @@
 main () :: -> Void
 {
-    [Int] a = 1 : 2 : 3 : [];
-
     /* this should print 0 */
     print(3 - 2 - 1);
 
