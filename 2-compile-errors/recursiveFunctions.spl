@@ -1,0 +1,9 @@
+f(x) :: Int -> Int
+{
+    // Int ~ Bool
+    return f(True);
+}
+
+main() :: -> Void
+{
+}
