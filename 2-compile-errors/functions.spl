@@ -9,6 +9,7 @@ g(x,y) :: Int Int -> Int
 {
     // Int ~ Bool
     return x < y;
+    /*return 10;*/
 }
 
 h() :: -> Bool
@@ -17,6 +18,7 @@ h() :: -> Bool
     {
         // Bool ~ Int
         return 10;
+        /*return True;*/
     }
     else
     {
@@ -31,12 +33,14 @@ i(x, y) :: Int Int -> Int
 
 // too many arguments
 j(x, y) :: Int -> Int
+/*j(x, y) :: Int Int -> Int*/
 {
     return x + y;
 }
 
 // not enough arguments
 k(x) :: Int Int -> Int
+/*k(x) :: Int -> Int*/
 {
     return x;
 }
