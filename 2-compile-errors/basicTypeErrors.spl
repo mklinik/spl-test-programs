@@ -33,7 +33,7 @@ main() :: -> Void
     print( 10 < True );
     // Int ~ Bool
     print( False < 10 );
-    // Bool ~ Int
+    // Int ~ Bool
     print( False < True );
 
     // Bool ~ Int
