@@ -20,7 +20,7 @@ main() :: -> Void
     print( b.snd + 7 );
 
     // Int ~ Bool
-    b.fst = True;
+    b.fst = False;
     // Bool ~ Int
-    b.snd = 10;
+    b.snd = 70;
 }
