@@ -50,30 +50,50 @@ main()::->Void
     (Int, Bool) lTuple1 = (5, True);
     (Int, Int) lTuple2 = (5, 7);
 
+    // 0
     print(globalA);
     globalA = 1;
+    // 1
     print(globalA);
     globalA = globalA + 1;
+    // 2
     print(globalA);
 
+    // 0
     print(localA);
     localA = 1;
+    // 1
     print(localA);
     localA = localA + 1;
+    // 2
     print(localA);
 
+    // 0
+    // 1
+    // 2
     f(0);
 
     incList(lIntList);
+    // 2
+    // 3
+    // 4
     printIntList(lIntList);
     incList(gIntList);
+    // 6
+    // 7
+    // 8
+    // 9
     printIntList(gIntList);
 
     incNegTuple(lTuple1);
+    // 6
     print(lTuple1.fst);
+    // False
     print(lTuple1.snd);
 
     incNegTuple2(lTuple2);
+    // 6
     print(lTuple2.fst);
+    // -7
     print(lTuple2.snd);
 }
