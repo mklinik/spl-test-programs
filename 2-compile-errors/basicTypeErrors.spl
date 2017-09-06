@@ -1,25 +1,42 @@
 main() :: -> Void
 {
-    // Each of the commented lines should give a compile error
+    // ~ means unification error
 
-    /*Int a = True;*/
-    /*Bool b = 10;*/
+    // Int ~ Bool
+    Int a = True;
+    // Bool ~ Int
+    Bool b = 10;
     Int c = 0;
     [Int] d = 1:2:3:[];
     [Bool] e = True:False:[];
 
-    /*c = True;*/
-    /*print( c + d );*/
-    /*print( c + d.tl );*/
-    /*print( e * d );*/
-    /*print( 10 * True );*/
-    /*print( 10 < True );*/
-    /*print( False < True );*/
-    /*print( 10 || 5 );*/
-    /*print( True || 5 );*/
-    /*print( 10 && False );*/
-    /*print( 10 && False );*/
+    // Int ~ Bool
+    c = True;
+    // Int ~ [Int]
+    print( 0 + d );
+    // Int ~ [Int]
+    print( 0 + d.tl );
+    // Int ~ [Bool]
+    print( e * 1 );
+    // Int ~ [Int]
+    print( 1 * d );
+    // Int ~ Bool
+    print( 10 * True );
+    // Int ~ Bool
+    print( 10 < True );
+    // Int ~ Bool
+    print( False < 10 );
+    // Bool ~ Int
+    print( 10 || True );
+    // Bool ~ Int
+    print( True || 5 );
+    // Bool ~ Int
+    print( 10 && False );
+    // Bool ~ Int
+    print( False && 10 );
 
-    /*while( 10 ) { }*/
-    /*if( 10 ) {} else {}*/
+    // Bool ~ Int
+    while( 10 ) { }
+    // Bool ~ Int
+    if( 10 ) {} else {}
 }

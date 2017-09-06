@@ -1,12 +1,16 @@
 main() :: -> Void
 {
-    // each of the commented lines should give a compile error
+    // ~ means the line should give a unification error
     [Int] a = 1:2:[];
     [Bool] b = True:False:[];
     [Int] c = [];
-    /*[Int] d = b:c;*/
-    /*[Bool] e = True:b;*/
+    // [Bool] ~ [Int]
+    [Int] d = b:c;
+    // ? this should work
+    [Bool] e = True:b;
 
-    /*print(isEmpty(a.hd));*/
-    /*print(isEmpty(True));*/
+    // [a] ~ Int
+    print(isEmpty(a.hd));
+    // [a] ~ Bool
+    print(isEmpty(True));
 }

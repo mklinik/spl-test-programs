@@ -4,6 +4,8 @@ main() :: -> Void
     (Int, Bool) b = (10, True);
 
     // each of these lines should give a compile error
+    // (a,b) ~ Int
     print( a.fst );
+    // Int ~ Bool
     print( b.snd + 7 );
 }

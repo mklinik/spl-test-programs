@@ -7,14 +7,16 @@ f(x) :: Int -> Bool
 
 g(x,y) :: Int Int -> Int
 {
-    /*return x < y;*/
+    // Int ~ Bool
+    return x < y;
 }
 
 h() :: -> Bool
 {
     if( True )
     {
-        /*return 10;*/
+        // Bool ~ Int
+        return 10;
     }
     else
     {
@@ -25,7 +27,10 @@ h() :: -> Bool
 
 main() :: -> Void
 {
-    /*print(f(True));*/
-    /*print(f(f));*/
-    /*print(f(10) + 10);*/
+    // Int ~ Bool
+    print(f(True));
+    // Int ~ Int -> Bool
+    print(f(f));
+    // Int ~ Bool
+    print(f(10) + 10);
 }

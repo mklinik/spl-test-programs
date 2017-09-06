@@ -16,8 +16,13 @@ main() :: -> Void
     print(e);
 
     // Each of these lines should definitely give a compile error
-    /*print( d == c.hd );*/
-    /*print( a == b.fst );*/
-    /*print( d == e );*/
+    // Bool ~ Int
+    print( True == 10 );
+    // [Int] ~ Int
+    print( d == 2 );
+    // (Int, Int) ~ Int
+    print( (1,1) == 1 );
+    // [Int] ~ [Bool]
+    print( d == e );
 
 }
