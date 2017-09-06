@@ -2,10 +2,19 @@ main() :: -> Void
 {
     Int a = 10;
     (Int, Bool) b = (10, True);
+    // (Int, Bool) ~ (Int, Int)
+    (Int, Bool) c = (10, 10);
+    // (Int, Bool) ~ (Bool, Bool)
+    (Int, Bool) d = (True, True);
 
     // each of these lines should give a compile error
     // (a,b) ~ Int
     print( a.fst );
     // Int ~ Bool
     print( b.snd + 7 );
+
+    // Int ~ Bool
+    b.fst = True;
+    // Bool ~ Int
+    b.snd = 10;
 }

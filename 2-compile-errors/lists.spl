@@ -4,10 +4,12 @@ main() :: -> Void
     [Int] a = 1:2:[];
     [Bool] b = True:False:[];
     [Int] c = [];
+    // Int ~ Bool
+    [Int] e = True:[];
+    // [Int] ~ [Bool]
+    [Int] f = 10:b;
     // [Bool] ~ [Int]
     [Int] d = b:c;
-    // ? this should work
-    [Bool] e = True:b;
 
     // [a] ~ Int
     print(isEmpty(a.hd));
