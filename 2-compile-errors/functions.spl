@@ -45,6 +45,24 @@ k(x) :: Int Int -> Int
     return x;
 }
 
+// nothing returned from main branch
+l(x) :: Int -> Int {
+    x = x + 1;
+    /* return x; */
+}
+
+// nothing returned from condition branch
+m(x) :: Int -> Int {
+    if (x < 4)
+    {
+        x = x + 1;
+    }
+    else
+    {
+        return x;
+    }
+}
+
 
 main() :: -> Void
 {
