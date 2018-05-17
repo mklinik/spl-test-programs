@@ -1,6 +1,6 @@
 printNumElements(list, n) :: [Int] Int -> Void
 {
-    while( !isNull(list) && n > 0 )
+    while( !isEmpty(list) && n > 0 )
     {
         print(list.hd);
         list = list.tl;
